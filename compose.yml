@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    container_name: python313
+    tty: true
+    volumes:
+      - ./app:/app
+
